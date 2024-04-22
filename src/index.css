@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    color: #8bba7a;
+    background-color: #050404;
+    letter-spacing: 0.02rem;
+    min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.1em;
+}
+
+p {
+  padding: 6px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  background-color: #2b1130;
+  text-align: center;
+  padding: 22px 9% ;
+  margin-bottom: 100px;
+  font-style: italic;
+  color:#f5f1e3;
+
+}
+
+
+ul{
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+ul li{
+  font-size: 20px;
+} 
+
+.navbar img{
+width: 12%;
+height: 12%;
+border-radius: 55%;
+margin-right: 100px;
+}
+.input-wrapper{
+background-color: #be2525;
+width: 55%;
+border-radius: 10px;
+height: 2.5rem;
+padding: 0 15px;
+box-shadow:0px 0px 8px #ddd;
+display: flex;
+align-items: center;
+}
+
+form input{
+  background-color: transparent;
+  border: none;
+  height:100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
+} 
+input:focus{
+  outline: none;
+}
+
+#search-icon{
+  color: rgb(48, 11, 11);
+}
+
+
+.github-icon {
+    font-size: 4rem;
+    width: 165px;
+    cursor: pointer ;
+}
+
+section {
+  padding: 25px 0;
+}
+
+.repo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.view-more {
+  text-align: center;
+  font-size: 1rem;
+  color:#ad3b9a ;
+  cursor: pointer;
+  margin: 50px 0 60px;
+}
+
+.view-more:hover {
+  text-decoration: underline;
+  color: #fff;
+  background-color: rgb(51, 191, 191);
+}
+.view-more:active {
+  background-color: #768679;
+}
+
+.repo-card,
+.RepoDetail-card {
+  border: 1px solid #e2eaeb;
+  padding: 13px;
+  border-radius: 5px;
+}
+.repo-card,
+.RepoDetail-card:hover {
+  box-shadow: 0 0 10px #e2eaeb;
+
+}
+
+.repo-card:hover {
+  background-color: #f5f1e3;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #2c3131;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.repo-name {
+  color: #dae324;
+  font-size: 2rem;
+  word-break: break-word;
+}
+
+#RepoDetail {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#RepoDetail p {
+  padding: 15px 0;
+  word-break: break-all;
+}
+
+.repo-mini-details {
+  gap: 10px 50px;
+  margin: 0 0 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.repo-mini-details  p {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.icons {
+  color: #1B9AAA;
+}
+
+
+.error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50h;
+}
+
+.error-page h1 {
+  font-size: 3rem;
+  color: #1B9AAA;
+  margin-bottom: 20px;
+}
+
+.error-status {
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 380px) {
+  .repo-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .github-icon {
+      font-size: 2rem;
+  }
+
+}
