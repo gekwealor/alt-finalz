@@ -1,3 +1,6 @@
+second semester exam with vite and react. not a joke.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
